@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>Ejercicio 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" ></iframe>
+        <div class="container">
+            <div class="box">
+                <h1>Contact form</h1>
+
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8_RG1qoei4FQoeD-yFJT-4KpR53exx5FLZqR7be-YFKW-zw/formResponse" target="hidden_iframe" onsubmit="submitted=true" method="POST">
+                    <div> <h5>Almuerzo o Cena</h5>
+                    <select name="entry.1430354534" id="horario" >
+                        <option value="" >Seleccione un horario comer</option>
+                        <option value="Almuerzo" >Almuerzo</option>
+                        <option value="Cena" >Cena</option>
+                    </select>
+                    </div><br>
+                    <div> <h5>Plato principal</h5>
+                    <select type="text" placeholder="" id="platoprin" name="entry.183953893" >
+                        <option value="">Seleccione un plato principal</option>
+                        <option value="Tallarines con albondigas">Tallarines con albondigas</option>
+                        <option value="Pollo a la portuguesa">Pollo a la portuguesa</option>
+                        <option value="Costilla de cerdo con ensalada">Costilla de cerdo con ensalada</option>
+                        <option value="Milanesas con papas fritas">Milanesas con papas fritas</option>
+                    </select>
+                    </div><br>
+                    <div><h5>Describe el postre deseado</h5>
+                    <input type="text" placeholder="" name="entry.1783889944">
+                    </div><br>
+                    <input style="background-color: #63666A;"  onclick=acceder() type="submit" value="Enviar"><br>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="validar.js"></script>
+    </body>
+</html>
